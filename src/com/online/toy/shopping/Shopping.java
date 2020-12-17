@@ -6,6 +6,7 @@ import java.util.TreeMap;
 public class Shopping {
 
 	private Map<Integer, String> toypriceMap;
+	private Map<Integer, String> toypriceMap1;
 	int amount;
 
 	public int getAmount() {
@@ -77,6 +78,7 @@ public class Shopping {
 	 */
 	private void populateToyPriceMap() {
 		toypriceMap = new TreeMap<Integer, String>();
+		toypriceMap1 = new TreeMap<Integer, String>();
 		// - Enum values() examples
 		ToyPrice[] prices = ToyPrice.values();
 		for (ToyPrice price : prices) {
